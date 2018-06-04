@@ -36,6 +36,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'style': resolve('src/assets/styles')
     }
   },
   module: {
@@ -52,8 +53,8 @@ module.exports = {
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
-        test   : /\.less$/,
-        loader : 'css-loader!less-loader',
+        test  : /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
