@@ -3,9 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'style/reset.css'
 import 'style/iconfont.css'
 
+// swiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
+
+import axios from 'axios'
+Vue.prototype.axios = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
