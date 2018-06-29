@@ -1,0 +1,4 @@
+[0604/105509.947:ERROR:process_reader_win.cc(242)] ReadMemory at 0x54ea580 of 44 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0604/105509.947:WARNING:pe_image_annotations_reader.cc(133)] could not read annotations list object in C:\Program Files (x86)\Google\Chrome\Application\65.0.3325.181\chrome_elf.dll
+[0604/105509.963:ERROR:process_reader_win.cc(242)] ReadMemory at 0x5da8dd8 of 44 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0604/105509.963:WARNING:pe_image_annotations_reader.cc(133)] could not read annotations list object in C:\Program Files (x86)\Google\Chrome\Application\65.0.3325.181\chrome_child.dll

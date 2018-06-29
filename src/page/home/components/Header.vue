@@ -8,7 +8,7 @@
       输入城市/景点/游玩主题
     </div>
     <div class="header-right">
-      <span class="iconfont arrow-icon">城市&#xe64a;</span>
+      <span class="iconfont arrow-icon" @click="popup">城市&#xe64a;</span>
     </div>
   </div>
 </template>
@@ -16,8 +16,27 @@
   export default{
     name: 'HomeHeader',
     data () {
-      return {}
+      return {
+        popupInfo: [{
+          text      : '行内转账',
+          cssClasses: 'content',
+          handler   : function () {
+            alert('行内转账')
+          }
+        },{
+          text      : '跨行转账',
+          cssClasses: 'content',
+          handler   : function () {
+            alert('跨行转账')
+          }
+        }]
+      }
     },
+    methods: {
+      popup(){
+        this.$emit('popup', this.popupInfo)
+      }
+    }
   }
 </script>
 <style scoped lang="less" type="text/less">
